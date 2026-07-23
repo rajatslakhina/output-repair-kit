@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 684" width="820" height="684" font-family="Menlo, Monaco, monospace">
+  <rect width="820" height="684" rx="10" fill="#1e1e2e"/>
+  <rect width="820" height="34" rx="10" fill="#181825"/>
+  <rect y="18" width="820" height="16" fill="#181825"/>
+  <circle cx="20" cy="17" r="6" fill="#f38ba8"/>
+  <circle cx="40" cy="17" r="6" fill="#f9e2af"/>
+  <circle cx="60" cy="17" r="6" fill="#a6e3a1"/>
+  <text x="410" y="21" font-size="11" fill="#9399b2" text-anchor="middle">swift run OutputRepairDemo</text>
+  <text x="18" y="56" font-size="11" fill="#f9e2af" xml:space="preserve">== OutputRepairKit demo ==</text>
+  <text x="18" y="90" font-size="11" fill="#89b4fa" xml:space="preserve">--- 1. converge: a model that fixes its JSON once told exactly what is wrong ---</text>
+  <text x="18" y="107" font-size="11" fill="#89dceb" xml:space="preserve">  attempts: 3   repairs: 2</text>
+  <text x="18" y="124" font-size="11" fill="#a6e3a1" xml:space="preserve">  decoded:  WeatherReport(city: "Delhi", tempC: 41, condition: "Sunny")</text>
+  <text x="18" y="141" font-size="11" fill="#cdd6f4" xml:space="preserve">  issues seen per failed attempt:</text>
+  <text x="18" y="158" font-size="11" fill="#cdd6f4" xml:space="preserve">    attempt 1: 2 issue(s) -&gt; [tempC, condition]</text>
+  <text x="18" y="175" font-size="11" fill="#cdd6f4" xml:space="preserve">    attempt 2: 1 issue(s) -&gt; [tempC]</text>
+  <text x="18" y="209" font-size="11" fill="#cdd6f4" xml:space="preserve">  the repair prompt the loop sent after attempt 1:</text>
+  <text x="18" y="226" font-size="11" fill="#9399b2" xml:space="preserve">    | Report Delhi's current weather as JSON with keys city, tempC, condition.</text>
+  <text x="18" y="243" font-size="11" fill="#9399b2" xml:space="preserve">    |</text>
+  <text x="18" y="260" font-size="11" fill="#9399b2" xml:space="preserve">    | Your previous reply was rejected. It was:</text>
+  <text x="18" y="277" font-size="11" fill="#9399b2" xml:space="preserve">    | {"city": "Delhi"}</text>
+  <text x="18" y="294" font-size="11" fill="#9399b2" xml:space="preserve">    |</text>
+  <text x="18" y="311" font-size="11" fill="#cba6f7" xml:space="preserve">    | Fix exactly these 2 problem(s):</text>
+  <text x="18" y="328" font-size="11" fill="#cba6f7" xml:space="preserve">    |   1. tempC: missing or not an integer (expected integer)</text>
+  <text x="18" y="345" font-size="11" fill="#cba6f7" xml:space="preserve">    |   2. condition: missing or empty (expected non-empty string)</text>
+  <text x="18" y="362" font-size="11" fill="#9399b2" xml:space="preserve">    |</text>
+  <text x="18" y="379" font-size="11" fill="#9399b2" xml:space="preserve">    | Return only the corrected output, with no explanation.</text>
+  <text x="18" y="413" font-size="11" fill="#89b4fa" xml:space="preserve">--- 2. exhaust: a model that never fixes it, stopped by the attempt budget ---</text>
+  <text x="18" y="430" font-size="11" fill="#f38ba8" xml:space="preserve">  gave up: Output still invalid after 4 attempt(s); 2 unresolved issue(s) on the final attempt.</text>
+  <text x="18" y="464" font-size="11" fill="#89b4fa" xml:space="preserve">--- 3. producer failure: the model call itself throws, surfaced verbatim ---</text>
+  <text x="18" y="481" font-size="11" fill="#f38ba8" xml:space="preserve">  gave up: Producer failed on attempt 1: simulated 503 from provider</text>
+  <text x="18" y="515" font-size="11" fill="#89b4fa" xml:space="preserve">--- 4. stats: the loop actor accumulates health signal across all three runs ---</text>
+  <text x="18" y="532" font-size="11" fill="#89dceb" xml:space="preserve">  totalRuns: 3   succeeded: 1   exhausted: 1   producerFailures: 1</text>
+  <text x="18" y="549" font-size="11" fill="#89dceb" xml:space="preserve">  totalRepairs across finished runs: 5</text>
+  <text x="18" y="583" font-size="11" fill="#89b4fa" xml:space="preserve">--- 5. audit trail: every attempt, rejection, repair, and outcome recorded ---</text>
+  <text x="18" y="600" font-size="11" fill="#a6e3a1" xml:space="preserve">  21 events -&gt; exhausted: 1, invalid: 6, produced: 7, producerFailed: 1, repairScheduled: 5, validated: 1</text>
+  <text x="18" y="634" font-size="11" fill="#89b4fa" xml:space="preserve">--- 6. backoff: an exponential, capped, deterministic repair schedule ---</text>
+  <text x="18" y="651" font-size="11" fill="#a6e3a1" xml:space="preserve">  base 200ms x2, cap 1000ms -&gt; 1:200ms  2:400ms  3:800ms  4:1000ms  5:1000ms</text>
+</svg>

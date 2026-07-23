@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 640" width="720" height="640" font-family="Menlo, Monaco, monospace">
+  <rect width="720" height="640" fill="#1e1e2e"/>
+  <text x="30" y="44" font-size="22" fill="#f5f5f5" font-weight="bold">OutputRepairKit &#8212; Quality Gates</text>
+  <rect x="30" y="68" width="155" height="70" rx="8" fill="#1e2b23" stroke="#a6e3a1" stroke-width="2"/>
+  <text x="107" y="98" font-size="13" fill="#a6e3a1" text-anchor="middle" font-weight="bold">swift build</text>
+  <text x="107" y="120" font-size="11" fill="#bac2de" text-anchor="middle">0 warnings, 0 errors</text>
+  <rect x="200" y="68" width="155" height="70" rx="8" fill="#1e262b" stroke="#89dceb" stroke-width="2"/>
+  <text x="277" y="98" font-size="13" fill="#89dceb" text-anchor="middle" font-weight="bold">35 tests</text>
+  <text x="277" y="120" font-size="11" fill="#bac2de" text-anchor="middle">0 failures</text>
+  <rect x="370" y="68" width="155" height="70" rx="8" fill="#2b2620" stroke="#f9e2af" stroke-width="2"/>
+  <text x="447" y="98" font-size="13" fill="#f9e2af" text-anchor="middle" font-weight="bold">100.00%</text>
+  <text x="447" y="120" font-size="11" fill="#bac2de" text-anchor="middle">line / region / func</text>
+  <rect x="540" y="68" width="150" height="70" rx="8" fill="#241e2b" stroke="#cba6f7" stroke-width="2"/>
+  <text x="615" y="98" font-size="13" fill="#cba6f7" text-anchor="middle" font-weight="bold">SwiftLint</text>
+  <text x="615" y="120" font-size="11" fill="#bac2de" text-anchor="middle">0 violations, strict</text>
+  <text x="30" y="176" font-size="13" fill="#f5f5f5" font-weight="bold">llvm-cov report &#8212; library target (OutputRepairKit)</text>
+  <rect x="30" y="188" width="660" height="392" rx="8" fill="#181825" stroke="#313244" stroke-width="1.5"/>
+  <text x="48" y="212" font-size="11" fill="#9399b2">File</text>
+  <text x="470" y="212" font-size="11" fill="#9399b2" text-anchor="end">Regions</text>
+  <text x="560" y="212" font-size="11" fill="#9399b2" text-anchor="end">Lines</text>
+  <text x="668" y="212" font-size="11" fill="#9399b2" text-anchor="end">Cover</text>
+  <line x1="48" y1="220" x2="672" y2="220" stroke="#313244" stroke-width="1"/>
+  <text x="48" y="246" font-size="11" fill="#cdd6f4">OutputRepairLoop.swift</text>
+  <text x="470" y="246" font-size="11" fill="#bac2de" text-anchor="end">19</text>
+  <text x="560" y="246" font-size="11" fill="#bac2de" text-anchor="end">76</text>
+  <text x="668" y="246" font-size="11" fill="#a6e3a1" text-anchor="end">100.00%</text>
+  <text x="48" y="272" font-size="11" fill="#cdd6f4">RepairBackoff.swift</text>
+  <text x="470" y="272" font-size="11" fill="#bac2de" text-anchor="end">12</text>
+  <text x="560" y="272" font-size="11" fill="#bac2de" text-anchor="end">18</text>
+  <text x="668" y="272" font-size="11" fill="#a6e3a1" text-anchor="end">100.00%</text>
+  <text x="48" y="298" font-size="11" fill="#cdd6f4">RepairClock.swift</text>
+  <text x="470" y="298" font-size="11" fill="#bac2de" text-anchor="end">2</text>
+  <text x="560" y="298" font-size="11" fill="#bac2de" text-anchor="end">2</text>
+  <text x="668" y="298" font-size="11" fill="#a6e3a1" text-anchor="end">100.00%</text>
+  <text x="48" y="324" font-size="11" fill="#cdd6f4">RepairError.swift</text>
+  <text x="470" y="324" font-size="11" fill="#bac2de" text-anchor="end">5</text>
+  <text x="560" y="324" font-size="11" fill="#bac2de" text-anchor="end">11</text>
+  <text x="668" y="324" font-size="11" fill="#a6e3a1" text-anchor="end">100.00%</text>
+  <text x="48" y="350" font-size="11" fill="#cdd6f4">RepairEvent.swift</text>
+  <text x="470" y="350" font-size="11" fill="#bac2de" text-anchor="end">1</text>
+  <text x="560" y="350" font-size="11" fill="#bac2de" text-anchor="end">4</text>
+  <text x="668" y="350" font-size="11" fill="#a6e3a1" text-anchor="end">100.00%</text>
+  <text x="48" y="376" font-size="11" fill="#cdd6f4">RepairEventRecording.swift</text>
+  <text x="470" y="376" font-size="11" fill="#bac2de" text-anchor="end">7</text>
+  <text x="560" y="376" font-size="11" fill="#bac2de" text-anchor="end">15</text>
+  <text x="668" y="376" font-size="11" fill="#a6e3a1" text-anchor="end">100.00%</text>
+  <text x="48" y="402" font-size="11" fill="#cdd6f4">RepairIssue.swift</text>
+  <text x="470" y="402" font-size="11" fill="#bac2de" text-anchor="end">8</text>
+  <text x="560" y="402" font-size="11" fill="#bac2de" text-anchor="end">17</text>
+  <text x="668" y="402" font-size="11" fill="#a6e3a1" text-anchor="end">100.00%</text>
+  <text x="48" y="428" font-size="11" fill="#cdd6f4">RepairPolicy.swift</text>
+  <text x="470" y="428" font-size="11" fill="#bac2de" text-anchor="end">1</text>
+  <text x="560" y="428" font-size="11" fill="#bac2de" text-anchor="end">4</text>
+  <text x="668" y="428" font-size="11" fill="#a6e3a1" text-anchor="end">100.00%</text>
+  <text x="48" y="454" font-size="11" fill="#cdd6f4">RepairPrompting.swift</text>
+  <text x="470" y="454" font-size="11" fill="#bac2de" text-anchor="end">5</text>
+  <text x="560" y="454" font-size="11" fill="#bac2de" text-anchor="end">22</text>
+  <text x="668" y="454" font-size="11" fill="#a6e3a1" text-anchor="end">100.00%</text>
+  <text x="48" y="480" font-size="11" fill="#cdd6f4">RepairRun.swift</text>
+  <text x="470" y="480" font-size="11" fill="#bac2de" text-anchor="end">3</text>
+  <text x="560" y="480" font-size="11" fill="#bac2de" text-anchor="end">16</text>
+  <text x="668" y="480" font-size="11" fill="#a6e3a1" text-anchor="end">100.00%</text>
+  <text x="48" y="506" font-size="11" fill="#cdd6f4">RepairSleeper.swift</text>
+  <text x="470" y="506" font-size="11" fill="#bac2de" text-anchor="end">5</text>
+  <text x="560" y="506" font-size="11" fill="#bac2de" text-anchor="end">5</text>
+  <text x="668" y="506" font-size="11" fill="#a6e3a1" text-anchor="end">100.00%</text>
+  <line x1="48" y1="512" x2="672" y2="512" stroke="#313244" stroke-width="1"/>
+  <text x="48" y="532" font-size="11" fill="#a6e3a1" font-weight="bold">TOTAL</text>
+  <text x="470" y="532" font-size="11" fill="#bac2de" text-anchor="end">68</text>
+  <text x="560" y="532" font-size="11" fill="#bac2de" text-anchor="end">190</text>
+  <text x="668" y="532" font-size="11" fill="#a6e3a1" text-anchor="end" font-weight="bold">100.00%</text>
+  <text x="30" y="608" font-size="10.5" fill="#9399b2">OutputContract.swift and ResponseProducing.swift are pure protocol/enum declarations</text>
+  <text x="30" y="624" font-size="10.5" fill="#9399b2">(no executable regions) and are correctly omitted from the coverage table.</text>
+</svg>
